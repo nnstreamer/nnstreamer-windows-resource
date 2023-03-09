@@ -20,11 +20,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.ho>
+#include <string.h>
 #ifndef _WIN32
 #include <unistd.h>
 #else
+#include <BaseTsd.h>
 #include <io.h>
+#define ssize_t SSIZE_T
 #endif
 
 #ifdef __cplusplus
